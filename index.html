@@ -122,6 +122,7 @@ var arr = document.getElementsByClassName("list-of-domains");
 var i;
 for (i = 0; i < arr.length; i++) {
 
+document.write(arr[i].innerHTML+"<br/>")
 	if(arr[i].innerHTML===window.location.host){
 		arr[i].classList.add("active");
 		//document.write(arr[i].innerHTML)
