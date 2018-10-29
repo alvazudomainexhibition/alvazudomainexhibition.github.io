@@ -62,55 +62,55 @@
   <div class="list-group dropdown-menu" aria-labelledby="dropdownMenu1">
 
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>6in9.com</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">6in9.com</b></h4>
         <p class="list-group-item-text">Sex in Nights~</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>c5.cx</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">c5.cx</b></h4>
         <p class="list-group-item-text"></p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>DailyGermany.com</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">DailyGermany.com</b></h4>
         <p class="list-group-item-text">What's happening in Germany?</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>Hubness.com</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">Hubness.com</b></h4>
         <p class="list-group-item-text">A Mathematical Keyword</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>IndiaU.com</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">IndiaU.com</b></h4>
         <p class="list-group-item-text">India ^_^</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>jo.gs</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">jo.gs</b></h4>
         <p class="list-group-item-text">Your jogging expert.</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>Nobelprize.org.cn</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">Nobelprize.org.cn</b></h4>
         <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>outlook.com.hk</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">outlook.com.hk</b></h4>
         <p class="list-group-item-text">Hello, Outlook</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>SuDrive.com</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">SuDrive.com</b></h4>
         <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>uploaded.cn</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">uploaded.cn</b></h4>
         <p class="list-group-item-text">"Get Files Uploaded"</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>viawhat.com</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">viawhat.com</b></h4>
         <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>wi.gs</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">wi.gs</b></h4>
         <p class="list-group-item-text">Want Wigs?</p>
       </a>
       <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading list-of-domains"><b>x5tv.com</b></h4>
+        <h4 class="list-group-item-heading"><b class="list-of-domains">x5tv.com</b></h4>
         <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
       </a>
 </div>
@@ -121,8 +121,10 @@
 var arr = document.getElementsByClassName("list-of-domains");
 var i;
 for (i = 0; i < arr.length; i++) {
-	if(arr[i].innerHTML=="<b>"+window.location.host+"</b>"){
+
+	if(arr[i].innerHTML===window.location.host){
 		arr[i].classList.add("active");
+		//document.write(arr[i].innerHTML)
 	}
 }
   document.write("2018 "+window.location.host);
